@@ -14,6 +14,16 @@ Windows 10 / 11、x64用。ダウンロード後にダブルクリックして�
 
 [初めての導入手順](user/start.md) · [版ごとのダウンロード](https://github.com/cijb-7724/KOmagumi-download/releases) · [更新履歴](CHANGELOG.md)
 
+## まずは小さなデモで試す
+
+### [練習用データをまとめてダウンロード（ZIP）](https://github.com/cijb-7724/KOmagumi-download/raw/refs/heads/main/demo/KOmagumi-demo.zip)
+
+**4日間・生徒2人・講師2人・講習申込3コマ。** 通常授業1コマを含み、○×は入力済みです。画面写真と同じ架空データで、Excelを自分で作らずに試せます。
+
+**[画面を見ながらデモを動かす →](user/demo.md)**
+
+![デモの配置結果。申込3、配置3、未配置0と、Excel3冊の保存ボタン](assets/screenshots/09-save.jpg)
+
 ## 読みたい説明を選んでください
 
 | 使う人向け | 開発者・AIエージェント向け |

@@ -30,6 +30,8 @@ node --test prototypes/availability_intake/test_core.cjs prototypes/teacher_avai
 
 匿名ケースは `tests/support/workbooks.py` と `synthetic.py` が物理契約からExcelを新規生成する。実名帳票を匿名化したコピーではない。`test_synthetic_pipeline.py` が2生徒・2講師・既存授業・申込・PS1・文書往復・計算・出力を確認する。
 
+公開する [デモ一式](../user/demo.md)は、画面写真と同じ4日間・2生徒・2講師・通常1・申込3のファイル。開発側の `test_public_demo.py` は配布ZIPそのものを解凍し、別ライブラリへ .komagumi を取り込み、○×を保持したExcel再接続、PS1読取、短い計算、通常授業と入力原本の保護、Excel3冊の出力を確認する。デモ以外のExcel・講習・画像がソースの許可リストへ混入しないことも確認する。
+
 探索の動作確認は数秒〜10秒。最適性や高得点を得るために試験を延長しない。成功済み全体を同じ理由で繰り返さず、変更対象を確認する。
 
 ## 配布
