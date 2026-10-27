@@ -36,6 +36,8 @@ node --test prototypes/availability_intake/test_core.cjs prototypes/teacher_avai
 
 ## 配布
 
+新規配置の基準日は、指定日当日の除外・全学年/中学生期間・既存消化/評価の維持・改ざん候補の独立検証・対象0・レポート・旧設定・.komagumi往復/Undo/Redo/Excel再接続を検証する。公開デモでは6/23を指定し、通常2授業を保護して6/24〜25に3配置・未配置0、後半空欄・入力不変を確認する。
+
 開発側の `tools/build_windows.py` がonefileのKOmagumi.exeを生成し、`tools/build_setup.py --fetch` が公式WebView2オフライン導入を内包したKOmagumiSetup.exeを生成する。既存の版は上書きせず新しいリリース番号を使う。
 
 公開前は、許可した文書・資産の一覧、実名/機密情報、アーカイブ内の実資産、配布SHAを確認する。利用者のExcel、講習、内部作業コピー、実験ログを同梱しない。

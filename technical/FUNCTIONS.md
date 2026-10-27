@@ -2,7 +2,7 @@
 
 [← 技術資料](README.md) · [全体の構成図](ARCHITECTURE.md)
 
-以下のパスは**非公開の開発リポジトリ内**の位置。公開リポジトリからソースを読めるという意味ではない。v0.9.1の実装に対応する。
+以下のパスは**非公開の開発リポジトリ内**の位置。公開リポジトリからソースを読めるという意味ではない。v0.9.2の実装に対応する。
 
 ## 計算の流れ
 
@@ -23,6 +23,7 @@ flowchart LR
 | `reader.py: inspect_workbook(path)` | OOXML → Inspection。名簿・日時・物理授業・セル・既存矛盾を読む |
 | `bundle.py: inspect_schedules(paths)` | 2冊 → 共通Inspection。人物・時刻・日付範囲・出力先を照合 |
 | `inputs.py: read_input_files(...)` | 設定・申込・可否＋名簿 → Inputs。担当・総数・PS1等を検証 |
+| `inputs.py: Inputs.can_add_on(day, student)` | 期間判定に新規配置の基準日を重ね、指定日の翌日以降だけ許可。既存消化はcontains_dateで別判定 |
 | `problem.py: prepare(schedule, inputs)` | Inspection＋Inputs → Problem。固定集計、担当/科目残数、候補・棄却理由 |
 | `problem.py: placement_upper_bound(problem)` | 候補と残数 → 生徒別最大流の緩和上界 |
 | `solver.py: solve(problem, time_limit=180, ...)` | Problem → Solution。配置数先行、複合目的、停止、最良、証明状況、推移 |
