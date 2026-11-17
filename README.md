@@ -14,6 +14,10 @@ Windows 10 / 11、x64用。ダウンロード後にダブルクリックして�
 
 [初めての導入手順](user/start.md) · [版ごとのダウンロード](https://github.com/cijb-7724/KOmagumi-download/releases) · [更新履歴](CHANGELOG.md)
 
+**以前の版を使っている方は、[更新手順](user/start.md#update)へ。** v0.9.2では「コマ組」で新規配置の日付を指定できます。たとえば6/23を指定すると、6/24以降にだけ追加します。[画面付きの操作説明](user/changes.md#placement-date)
+
+日付指定機能を追加する前の `.komagumi` も、そのまま開けます。入力済み○×・設定は引き継ぎ、新しい日付欄は空欄になります。入力し直す必要はありません。
+
 ## まずは小さなデモで試す
 
 ### [練習用データをまとめてダウンロード（ZIP）](https://github.com/cijb-7724/KOmagumi-download/raw/refs/heads/main/demo/KOmagumi-demo.zip)
